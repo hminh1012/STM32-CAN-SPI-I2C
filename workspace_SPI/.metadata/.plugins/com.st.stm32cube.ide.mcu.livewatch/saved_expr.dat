@@ -1,0 +1,4 @@
+u8_SPI1_TxBuff
+u8_SPI1_RxBuff
+u8_SPI2_RxBuff
+state

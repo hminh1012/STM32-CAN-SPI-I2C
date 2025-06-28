@@ -1,0 +1,24 @@
+09:52:13 **** Build of configuration Debug for project I2C_Slave_C6T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:13: warning: unused variable 'TxData' [-Wunused-variable]
+  102 |     uint8_t TxData[6] = {0x1, 0x2, 0x3, 0x4, 0x5, 0x6};
+      |             ^~~~~~
+../Core/Src/main.c:101:12: warning: unused variable 'slaveADDR' [-Wunused-variable]
+  101 |   uint16_t slaveADDR = 0x12<<1;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "I2C_Slave_C6T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C6T6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C6T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C6T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C6T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C6T6.elf  > "I2C_Slave_C6T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  13024	     20	   1668	  14712	   3978	I2C_Slave_C6T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C6T6.list
+ 
+
+09:52:20 Build Finished. 0 errors, 2 warnings. (took 7s.161ms)
+

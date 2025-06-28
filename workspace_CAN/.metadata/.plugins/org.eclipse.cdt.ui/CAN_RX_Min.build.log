@@ -1,0 +1,43 @@
+23:44:56 **** Incremental Build of configuration Debug for project CAN_RX_Min ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_CAN_RxFifo0MsgPendingCallback':
+../Core/Src/main.c:58:11: error: 'datacheck' undeclared (first use in this function)
+   58 |           datacheck = 1;
+      |           ^~~~~~~~~
+../Core/Src/main.c:58:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: error: 'canfil' undeclared (first use in this function)
+  108 |   canfil.FilterBank = 0;
+      |   ^~~~~~
+../Core/Src/main.c:119:3: error: 'txHeader' undeclared (first use in this function); did you mean 'RxHeader'?
+  119 |   txHeader.DLC = 8;
+      |   ^~~~~~~~
+      |   RxHeader
+../Core/Src/main.c:138:15: error: 'datacheck' undeclared (first use in this function)
+  138 |           if (datacheck)
+      |               ^~~~~~~~~
+../Core/Src/main.c:140:12: warning: implicit declaration of function 'HAL_GPIO_Toggle'; did you mean 'HAL_GPIO_TogglePin'? [-Wimplicit-function-declaration]
+  140 |            HAL_GPIO_Toggle(GPIOC, GPIO_PIN_13);
+      |            ^~~~~~~~~~~~~~~
+      |            HAL_GPIO_TogglePin
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:259:6: error: redefinition of 'HAL_CAN_RxFifo0MsgPendingCallback'
+  259 | void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:50:6: note: previous definition of 'HAL_CAN_RxFifo0MsgPendingCallback' with type 'void(CAN_HandleTypeDef *)'
+   50 | void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_CAN_RxFifo0MsgPendingCallback':
+../Core/Src/main.c:261:51: error: 'rxHeader' undeclared (first use in this function); did you mean 'RxHeader'?
+  261 |         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxHeader, canRX);
+      |                                                   ^~~~~~~~
+      |                                                   RxHeader
+../Core/Src/main.c:261:61: error: 'canRX' undeclared (first use in this function)
+  261 |         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rxHeader, canRX);
+      |                                                             ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+23:44:57 Build Failed. 8 errors, 1 warnings. (took 1s.207ms)
+

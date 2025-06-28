@@ -1,0 +1,17 @@
+15:55:33 **** Incremental Build of configuration Debug for project TUT_CAN_LOOPBACK ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TUT_CAN_LOOPBACK.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_CAN\TUT_CAN_LOOPBACK\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TUT_CAN_LOOPBACK.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TUT_CAN_LOOPBACK.elf
+ 
+arm-none-eabi-size  TUT_CAN_LOOPBACK.elf 
+arm-none-eabi-objdump -h -S TUT_CAN_LOOPBACK.elf  > "TUT_CAN_LOOPBACK.list"
+   text	   data	    bss	    dec	    hex	filename
+   9776	     28	   1740	  11544	   2d18	TUT_CAN_LOOPBACK.elf
+Finished building: default.size.stdout
+ 
+Finished building: TUT_CAN_LOOPBACK.list
+ 
+
+15:55:34 Build Finished. 0 errors, 0 warnings. (took 830ms)
+

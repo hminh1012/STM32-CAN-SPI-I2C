@@ -1,0 +1,561 @@
+22:56:39 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	     24	   1736	  22456	   57b8	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:07:40 **** Build of configuration Debug for project i2c_slave ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103c8tx.d" -MT"Core/Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103c8tx.o" "../Core/Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "i2c_slave.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\i2c_slave_part6\i2c_slave\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="i2c_slave.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: i2c_slave.elf
+ 
+arm-none-eabi-size  i2c_slave.elf 
+arm-none-eabi-objdump -h -S i2c_slave.elf  > "i2c_slave.list"
+   text	   data	    bss	    dec	    hex	filename
+  14044	     20	   1684	  15748	   3d84	i2c_slave.elf
+Finished building: default.size.stdout
+ 
+Finished building: i2c_slave.list
+ 
+23:07:45 **** Incremental Build of configuration Debug for project i2c_slave ****
+make -j8 all 
+arm-none-eabi-size  i2c_slave.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14044	     20	   1684	  15748	   3d84	i2c_slave.elf
+Finished building: default.size.stdout
+ 
+23:08:50 **** Incremental Build of configuration Debug for project i2c_slave ****
+make -j8 all 
+arm-none-eabi-size  i2c_slave.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14044	     20	   1684	  15748	   3d84	i2c_slave.elf
+Finished building: default.size.stdout
+ 
+22:43:07 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20696	     24	   1736	  22456	   57b8	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+22:57:53 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:17: error: 'TxData' undeclared (first use in this function)
+  123 |                 TxData = value_pot; // Update transmit buffer
+      |                 ^~~~~~
+../Core/Src/main.c:123:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:58:34 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:24: error: assignment to expression with array type
+  124 |                 TxData = value_pot; // Update transmit buffer
+      |                        ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:58:50 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:54: multiple definition of `TxData'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:19: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: I2C_Slave_C8T6.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:00:44 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'process_data':
+../Core/Src/main.c:103:17: error: 'I2C_REGISTERS' undeclared (first use in this function)
+  103 |                 I2C_REGISTERS[startREG++] = RxData[indx++];  // Read the data from RxData and save it in the I2C_REGISTERS
+      |                 ^~~~~~~~~~~~~
+../Core/Src/main.c:103:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_I2C_AddrCallback':
+../Core/Src/main.c:129:53: error: 'I2C_REGISTERS' undeclared (first use in this function)
+  129 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, I2C_REGISTERS+startPosition+txcount, 1, I2C_FIRST_FRAME);
+      |                                                     ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:01:10 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:57: multiple definition of `I2C_REGISTERS'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:13: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:59: multiple definition of `RxData'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:18: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:60: multiple definition of `TxData'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:19: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:61: multiple definition of `rxcount'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:20: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:62: multiple definition of `txcount'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:21: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:63: multiple definition of `startPosition'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:22: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:64: multiple definition of `bytesRrecvd'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:23: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:65: multiple definition of `bytesTransd'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:24: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `process_data':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:88: multiple definition of `process_data'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:27: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_ListenCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:109: multiple definition of `HAL_I2C_ListenCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:48: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_AddrCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:114: multiple definition of `HAL_I2C_AddrCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:53: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_SlaveTxCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:134: multiple definition of `HAL_I2C_SlaveTxCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:73: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_SlaveRxCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:140: multiple definition of `HAL_I2C_SlaveRxCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:79: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_ErrorCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:161: multiple definition of `HAL_I2C_ErrorCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:100: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: I2C_Slave_C8T6.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:01:32 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:57: multiple definition of `I2C_REGISTERS'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:13: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:59: multiple definition of `RxData'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:18: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:60: multiple definition of `TxData'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:19: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:61: multiple definition of `rxcount'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:20: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:62: multiple definition of `txcount'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:21: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:63: multiple definition of `startPosition'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:22: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:64: multiple definition of `bytesRrecvd'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:23: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:65: multiple definition of `bytesTransd'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:24: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `process_data':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:89: multiple definition of `process_data'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:27: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_ListenCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:110: multiple definition of `HAL_I2C_ListenCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:48: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_AddrCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:115: multiple definition of `HAL_I2C_AddrCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:53: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_SlaveTxCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:135: multiple definition of `HAL_I2C_SlaveTxCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:73: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_SlaveRxCpltCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:141: multiple definition of `HAL_I2C_SlaveRxCpltCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:79: first defined here
+D:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `HAL_I2C_ErrorCallback':
+C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/main.c:162: multiple definition of `HAL_I2C_ErrorCallback'; ./Core/Src/i2c_slave.o:C:/Users/TS/STM32CubeIDE/workspace_I2C/I2C_Slave_C8T6/Debug/../Core/Src/i2c_slave.c:100: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: I2C_Slave_C8T6.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:02:10 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20672	     24	   1744	  22440	   57a8	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:05:33 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:17: error: 'I2C_REGISTERS' undeclared (first use in this function)
+  125 |                 I2C_REGISTERS[1] = (adc_raw >> 8) & 0xFF;
+      |                 ^~~~~~~~~~~~~
+../Core/Src/main.c:125:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:125:37: error: 'adc_raw' undeclared (first use in this function)
+  125 |                 I2C_REGISTERS[1] = (adc_raw >> 8) & 0xFF;
+      |                                     ^~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:05:58 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:125:17: error: 'I2C_REGISTERS' undeclared (first use in this function)
+  125 |                 I2C_REGISTERS[1] = (i2c_tx_data >> 8) & 0xFF;
+      |                 ^~~~~~~~~~~~~
+../Core/Src/main.c:125:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:09:19 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  19344	     24	   1720	  21088	   5260	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:09:39 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19344	     24	   1720	  21088	   5260	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+23:12:52 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:47: error: 'hi2c' undeclared (first use in this function); did you mean 'hi2c1'?
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                               ^~~~
+      |                                               hi2c1
+../Core/Src/main.c:124:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:53: warning: passing argument 2 of 'HAL_I2C_Slave_Seq_Transmit_IT' makes pointer from integer without a cast [-Wint-conversion]
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                                     ^~~~~~~~~~~
+      |                                                     |
+      |                                                     uint8_t {aka unsigned char}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:298,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:581:83: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  581 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t XferOptions);
+      |                                                                          ~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:13:07 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:47: error: 'hi2c' undeclared (first use in this function); did you mean 'hi2c1'?
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, &i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                               ^~~~
+      |                                               hi2c1
+../Core/Src/main.c:124:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:53: warning: passing argument 2 of 'HAL_I2C_Slave_Seq_Transmit_IT' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, &i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                                     ^~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:298,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:581:83: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'volatile uint8_t *' {aka 'volatile unsigned char *'}
+  581 | HAL_StatusTypeDef HAL_I2C_Slave_Seq_Transmit_IT(I2C_HandleTypeDef *hi2c, uint8_t *pData, uint16_t Size, uint32_t XferOptions);
+      |                                                                          ~~~~~~~~~^~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:13:36 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:47: error: 'hi2c' undeclared (first use in this function); did you mean 'hi2c1'?
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                               ^~~~
+      |                                               hi2c1
+../Core/Src/main.c:124:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:53: error: invalid type argument of unary '*' (have 'int')
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                                     ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:14:00 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:47: error: 'hi2c' undeclared (first use in this function); did you mean 'hi2c1'?
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                               ^~~~
+      |                                               hi2c1
+../Core/Src/main.c:124:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:53: error: invalid type argument of unary '*' (have 'int')
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *i2c_tx_data, 1, I2C_NEXT_FRAME);
+      |                                                     ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:14:14 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:47: error: 'hi2c' undeclared (first use in this function); did you mean 'hi2c1'?
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *value_pot, 1, I2C_NEXT_FRAME);
+      |                                               ^~~~
+      |                                               hi2c1
+../Core/Src/main.c:124:47: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:124:53: error: invalid type argument of unary '*' (have 'int')
+  124 |                 HAL_I2C_Slave_Seq_Transmit_IT(hi2c, *value_pot, 1, I2C_NEXT_FRAME);
+      |                                                     ^~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:14:52 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  19580	     24	   1720	  21324	   534c	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:18:36 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19580	     24	   1720	  21324	   534c	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+23:19:32 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  19344	     24	   1720	  21088	   5260	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:21:17 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  19344	     24	   1720	  21088	   5260	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:24:20 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:23: error: 'RxData' undeclared (first use in this function)
+  127 |             i2c_rcv = RxData;
+      |                       ^~~~~~
+../Core/Src/main.c:127:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:35:53 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  19068	     24	   1712	  20804	   5144	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:36:39 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/i2c_slave.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c_slave.d" -MT"Core/Src/i2c_slave.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c_slave.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20696	     24	   1736	  22456	   57b8	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:37:23 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20696	     24	   1736	  22456	   57b8	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+23:38:24 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:45: error: expected ';' before '}' token
+  124 |                 I2C_REGISTERS[3] = value_pot
+      |                                             ^
+      |                                             ;
+  125 |             }
+      |             ~                                
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:38:31 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20708	     24	   1736	  22468	   57c4	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:52:33 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: error: 'time_start' undeclared (first use in this function)
+  102 |   time_start = HAL_GetTick();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:102:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:113:17: error: 'value_pot' undeclared (first use in this function)
+  113 |                 value_pot = ScaleADCToByte(adc_value);
+      |                 ^~~~~~~~~
+../Core/Src/main.c:113:29: warning: implicit declaration of function 'ScaleADCToByte' [-Wimplicit-function-declaration]
+  113 |                 value_pot = ScaleADCToByte(adc_value);
+      |                             ^~~~~~~~~~~~~~
+../Core/Src/main.c:114:17: error: 'i2c_tx_data' undeclared (first use in this function)
+  114 |                 i2c_tx_data = value_pot; // Update transmit buffer
+      |                 ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:53:05 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: error: 'time_start' undeclared (first use in this function)
+  102 |   time_start = HAL_GetTick();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:102:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:113:17: error: 'value_pot' undeclared (first use in this function)
+  113 |                 value_pot = adc_value>>4;
+      |                 ^~~~~~~~~
+../Core/Src/main.c:114:17: error: 'i2c_tx_data' undeclared (first use in this function)
+  114 |                 i2c_tx_data = value_pot; // Update transmit buffer
+      |                 ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:54:03 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:3: error: 'time_start' undeclared (first use in this function)
+  103 |   time_start = HAL_GetTick();
+      |   ^~~~~~~~~~
+../Core/Src/main.c:103:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:54:13 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  17700	     20	   1732	  19452	   4bfc	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:56:09 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20708	     24	   1736	  22468	   57c4	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+23:57:51 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20716	     24	   1736	  22476	   57cc	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+00:00:16 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  17780	     20	   1740	  19540	   4c54	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+00:01:56 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "I2C_Slave_C8T6.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\TS\STM32CubeIDE\workspace_I2C\I2C_Slave_C8T6\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_Slave_C8T6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_Slave_C8T6.elf
+ 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+arm-none-eabi-objdump -h -S I2C_Slave_C8T6.elf  > "I2C_Slave_C8T6.list"
+   text	   data	    bss	    dec	    hex	filename
+  20724	     24	   1736	  22484	   57d4	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_Slave_C8T6.list
+ 
+14:10:15 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20724	     24	   1736	  22484	   57d4	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
+15:17:14 **** Incremental Build of configuration Debug for project I2C_Slave_C8T6 ****
+make -j8 all 
+arm-none-eabi-size  I2C_Slave_C8T6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20724	     24	   1736	  22484	   57d4	I2C_Slave_C8T6.elf
+Finished building: default.size.stdout
+ 
