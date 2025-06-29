@@ -5,7 +5,7 @@
 
 Use 2 STM32 to communicate each other by CAN BUS and display on laptop screen using UART
 
-To check whether the CAN transceiver ic module is working or not, please run in Loopback mode. Cre: https://community.st.com/t5/stm32-mcus/guide-to-can-bxcan-can2-0-configuration-in-loop-back-mode-on/ta-p/771119#:~:text=This%20article%20describes%20step%20by%20step%20how%20to,based%20on%20the%20STM32F103%20MCU%20%2F%20NUCLEO-F103RB%20board.
+To check whether the CAN transceiver ic module is working or not, please run in Loopback mode. Cre: https://community.st.com/t5/stm32-mcus/guide-to-can-bxcan-can2-0-configuration-in-loop-back-mode-on/tap/771119#:~:text=This%20article%20describes%20step%20by%20step%20how%20to,based%20on%20the%20STM32F103%20MCU%20%2F%20NUCLEO-F103RB%20board.
 
 If Loopback mode is working, just change Loopback mode to Normal mode in configuration part.
 
@@ -25,3 +25,10 @@ i2c_slave.c and i2c_slave from https://controllerstech.com/stm32-as-i2c-slave-pa
 
 P/s: Lab 3 is not yet complete and optimized  but still meets the proposed requirements.
 
+ĐIỀU QUAN TRỌNG PHẢI NÓI 3 LẦN: 
+
+CAN BUS IC CHỈ CHẠY ĐƯỢC KHI CẤP 5V THÔI
+
+CAN BUS IC CHỈ CHẠY ĐƯỢC KHI CẤP 5V THÔI
+
+CAN BUS IC CHỈ CHẠY ĐƯỢC KHI CẤP 5V THÔI
